@@ -28,12 +28,12 @@ before_install:
   - ulimit -a
 
     # Install the Python environment
-  - source devtools/travis-ci/before_install.sh
+  - source devtools/travis-ci/before_install.sh # Basically installing miniconda
   - python -V
 
 install:
 
-    # Create test environment for package
+    # Create test environment for package: Need to edit this file to change packages.
   - python devtools/scripts/create_conda_env.py -n=test -p=$PYTHON_VER devtools/conda-envs/test_env.yaml
     # Activate the test environment
   - conda activate test
