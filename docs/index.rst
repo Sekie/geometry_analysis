@@ -12,6 +12,7 @@ Available techniques:
 
  - distance
  - *bonds*
+
 This is a link to `Google <www.google.com>`_.
 
 .. toctree::
